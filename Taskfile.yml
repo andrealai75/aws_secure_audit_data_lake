@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+version: '3'
+
+tasks:
+  validate:
+    desc: Validate the Terraform configuration
+    cmds:
+      - cd infrastructure && terraform fmt -check -recursive
+    silent: true
+
+  init:
+    desc: Perform initialization tasks
+    cmds:
+      - cd infrastructure && terraform init
+    silent: true
+
+  plan:
+    desc: Generate and show an execution plan
+    tasks:
+      - init
+    cmds:
+      - cd infrastructure && terraform plan
+    silent: true
+
+  apply:
+    desc: Apply the changes required to reach the desired state of the configuration
+    tasks:
+      - init
+    cmds:
+      - cd infrastructure && terraform apply
+    silent: true
+
+  destroy:
+    desc: Destroy the Terraform-managed infrastructure
+    tasks:
+      - init
+    cmds:
+      - cd infrastructure && terraform plan -destroy
+      - cd infrastructure && terraform apply -destroy
+    silent: true
