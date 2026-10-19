@@ -5,7 +5,7 @@ tasks:
   validate:
     desc: Validate the Terraform configuration
     cmds:
-      - cd infrastructure && terraform fmt -check -recursive
+      - cd infrastructure && terraform fmt -check -recursive -diff
     silent: true
 
   init:
