@@ -23,6 +23,7 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+.terraform.lock.hcl
 # =========================================================================
 # Variable Files (Contains sensitive parameters)
 # =========================================================================
