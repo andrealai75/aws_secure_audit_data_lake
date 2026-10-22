@@ -1,0 +1,6 @@
+ticket_id,customer_name,credit_card_hash,event_name,price
+TKT-1001,Alice Smith,a8f5c2b3e9d1a4f0,Cyber Security Summit 2026,299.00
+TKT-1002,Bob Jones,b2c4d6e8f0a2b4c6,Cloud Architecture Expo,150.50
+TKT-1003,Charlie Brown,c3d5e7f9a1b3c5d7,DevOps Workshop,99.00
+TKT-1004,Diana Prince,d4e6f8a0b2c4d6e8,Serverless Deep Dive,199.99
+TKT-1005,Evan Wright,e5f7a9b1c3d5e7f9,AWS Security Specialist Prep,45.00
